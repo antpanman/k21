@@ -19,7 +19,7 @@ You should see something that looks like below
 Notice how the word `iphone` is highlighted? This is hit highliighting of the matched terms which gives a user some indication why the result was returned.
 ### Exercise 4 - Utilize the Navigation Tabs
 1. Click on the **Knowledge** tab
-These tabs are known as Navigation Tabs and they allow a user to display results from one source at a time. In this case, we are restricting results to just Knowledge Base articles.
+These tabs are known as *Navigation Tabs* and they allow a user to display results from one source at a time. In this case, we are restricting results to just Knowledge Base articles.
 You should see something that looks like below
 (screenshot 4)
 2. Click on the **All** tab to return to displaying all results in order of relevance
@@ -36,3 +36,24 @@ Notice how the word `laptop` is highlighted? You likely even see some results wh
 This is because `Mac` and `PC` are configured as synonyms of `laptop` in the default out-of-the-box (OOTB) synonymn dictionary.
 (screenshot 6)
 Synonyms are bi-directional, so searching for `PC` will also match and highlight `Mac` and `laptop`. Try it!
+### Exercise 7 - Explore typo handling
+1. Enter `ipone` in the search box and hit the ENTER key
+Notice how the the search term was auto-corrected to `iphone`? There is also a link offered that allows the user to bypass the spelling correction and instead search for the term exactly how it was entered. 
+(screenshot 7)
+### Exercise 8 - Explore stop words
+1. Enter `The windows key` in the search box and hit the ENTER key
+Notice how the word `the` is not hilighted? The word `the` is such a common word in English, and so many documents in the index will contain it, that searching for it doesn't help the user find what they are looking for. It is what we call a *stop word* which means it is ignored by the search engine.
+Try other queries which contain other stop words such as `I`, `a`, `if` and `for`.
+(screenshot 8)
+### Exercise 9 - Explore Genius Results
+1. Enter `paassword reset` in the search box and hit the ENTER key
+You should see something that looks like below
+(screenshot 9)
+The larger, featured result at the top of the results is what is called a *Genius Result*. The OOTB Genius Results include catalog items, people and Question and Answers (Q&A).
+### Exercise 10 - Impersonate a user
+1. Impersonate the user **Abraham Lincoln**
+2. Re-open the Service Portal
+3. Enter `***` in the search box and hit the ENTER key
+4. Click on the **Knowledge** tab
+Notice there are no Knowledge results? The Abraham Lincoln user does not have the necessary permissions to access any Knowledge articles OOTB. By impersonating this user, Abraham Lincoln's permissions are enforced by AI Search.
+(screenshot 10)
